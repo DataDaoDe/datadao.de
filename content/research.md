@@ -1,5 +1,6 @@
 +++
-title = "[RESEARCH]"
+title = "研究"
+template = "research.html"
 
 [extra]
 subtitle = "Research"

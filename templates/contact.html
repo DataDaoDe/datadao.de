@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% import "macros/utils.html" as utils %}
+
+{% block title %}{{config.title}} | {{ page.title }}{% endblock title %}
+
+{% block content %}
+  <div class="uk-width-1-1 uk-first-column">
+    <img src="/images/{{ page.extra["background_image"] }}"/>
+  </div>
+  <div class="uk-width-1-1 uk-text-center uk-first-column uk-grid-margin">
+    <h2>{{ page.extra["subtitle"] }}</h2>
+    
+    <ul>
+      {{ utils::contact_link(icon="github", link="https://github.com/DataDaoDe") }}</br>
+      {{ utils::contact_link(icon="twitter", link="https://twitter.com/DataDao_de") }}</br>
+      {{ utils::contact_link(icon="linkedin", link="https://www.linkedin.com/in/john-faucett-51210465/") }}</br>
+      {{ utils::contact_link(icon="xing", link="https://www.xing.com/profile/John_Faucett3/cv") }}</br>
+      {{ utils::mail_link(icon="mail", mail="john.faucett@datadao.de") }}
+    </ul>
+  </div>
+{% endblock content %}

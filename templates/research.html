@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block title %}{{config.title}} | {{ page.title }}{% endblock title %}
+
+{% block content %}
+  <div class="uk-width-1-1 uk-first-column">
+    <img src="/images/{{ page.extra["background_image"] }}"/>
+  </div>
+  <div class="uk-width-1-1 uk-first-column uk-grid-margin">
+    <h2 class="uk-text-center">{{ page.extra["subtitle"] }}</h2>
+    <hr />
+  {% set research_projects = load_data(path="content/research_data.json", format="json") %}
+  
+  {% for project in research_projects %}
+    <div class="uk-card uk-card-default uk-margin-medium-bottom">
+      {% if project["published"] == false %}{% continue %}{% endif %}
+      <div class="uk-card-header uk-width-1-1">
+        <h3 class="uk-card-title">{{ project["title"] }}</h3>
+      </div>
+      <div>
+        <div class="uk-card-body uk-width-1-1">
+          <p class="uk-text-meta">released: {{ project["date"] }}</p>
+          {{ project["description"] }}<br/>
+        </div>
+      </div>
+
+      <div class="uk-card-footer uk-width-1-1">
+        <ul class="uk-list uk-list-divider">
+          {% for project_file in project["files"] %}
+            <li>
+              <a class="uk-button-link" href="{{ project_file["url"] | safe }}">{{ project_file["title"]}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock content %}

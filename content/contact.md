@@ -1,5 +1,6 @@
 +++
-title = "[CONTACT]"
+title = "联系"
+template = "contact.html"
 
 [extra]
 subtitle = "Contact"
