@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block title %}{{config.title}} | {{ page.title }}{% endblock title %}
+
+{% block content %}
+  <div class="uk-width-1-1 uk-first-column">
+    <img src="/images/{{ page.extra["background_image"] }}"/>
+  </div>
+  <div class="uk-width-1-1 uk-first-column uk-grid-margin">
+    <h2 class="uk-text-center">{{ page.extra["subtitle"] }}</h2>
+  </div>
+  {{ page.content | safe }}
+{% endblock content %}

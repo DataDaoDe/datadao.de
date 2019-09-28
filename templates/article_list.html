@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block title %}{{config.title}} | {{ section.title }}{% endblock title %}
+
+{% block content %}
+  <div class="uk-width-1-1 uk-first-column">
+    <img src="/images/{{ section.extra["background_image"] }}"/>
+  </div>
+  <div class="uk-width-1-1 uk-first-column uk-grid-margin uk-text-center">
+    <h2 class="uk-text-center">{{ section.extra["subtitle"] }}</h2>
+
+  <ul class="articles">
+      {% for p in paginator.pages %}
+        <li class="article">
+          <div class="article-link">
+              <a href="{{ p.permalink }}">{{p.title}}</a>
+          </div>
+        </li>
+      {% endfor %}
+  </ul>
+  <nav class="pagination">
+      {% if paginator.previous %}
+          <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+      {% endif %}
+      {% if paginator.next %}
+          <a class="next" href="{{ paginator.next }}">Next ›</a>
+      {% endif %}
+  </nav>
+
+  <div>
+{% endblock content %}

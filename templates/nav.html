@@ -1,0 +1,29 @@
+<div class="uk-container uk-container-xsmall">
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="">
+  <div class="uk-navbar-left">
+    <a class="uk-navbar-item uk-logo" href="/">道</a>
+    <ul class="uk-navbar-nav">
+
+      {% if current_path is matching("^articles/") %}<li class="uk-active">{% else %}<li>{% endif %}
+        <a class="dd-desktop" href="/articles" title="articles">articles</a>
+      </li>
+      
+      {% if current_path is matching("^projects/") %}<li class="uk-active">{% else %}<li>{% endif %}
+        <a class="dd-desktop" href="/projects" title="projects">projects</a>
+      </li>
+      
+      {% if current_path is matching("^research/") %}<li class="uk-active">{% else %}<li>{% endif %}
+        <a class="dd-desktop" href="/research" title="research">research</a>
+      </li>
+      
+      {% if current_path is matching("^contact/") %}<li class="uk-active">{% else %}<li>{% endif %}
+        <a class="dd-desktop" href="/contact" title="contact">contact</a>
+      </li>
+
+      {% if current_path is matching("^whoami/") %}<li class="uk-active">{% else %}<li>{% endif %}
+        <a class="dd-desktop" href="/whoami" title="who am i?">who am i?</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>

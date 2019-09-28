@@ -1,0 +1,99 @@
+/* colors */
+.off-white { color: #faf0e6; }
+.beige     { color: #ecdcbb; }
+.red       { color: #d32a31; }
+.yellow    { color: #f8cc42; }
+.green     { color: #568441; }
+.blue      { color: #3056d6; }
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+*, p, li, a {
+    font-family: "Open Sans", sans-serif;
+    color: #221b10;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+a {
+    color: #3056d6;
+}
+a:hover, a:focus {
+    color: #2046c6;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+.footer .quote {
+    display: none;
+    margin-top: 20px;
+}
+
+/* code */
+code, :not(pre) > code, pre code {
+    font-family: "Inconsolata", monospace;
+    color: #221b10;
+    font-size: 1em;
+}
+
+pre {
+    color: #221b10;
+    font-size: 1em;
+    border-radius: 0px;
+}
+
+blockquote {
+  font-size: 1em;
+  font-style: normal;
+  background: #fafafa;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.uk-navbar-nav > li > a.dd-mobile {
+    display: none;
+}
+
+.uk-navbar-nav > li > a.dd-desktop {
+    display: flex;
+}
+
+@media (max-width: 640px) {
+    .uk-navbar-nav > li > a.dd-mobile {
+        display: inline;
+    }
+
+    .uk-navbar-nav > li > a.dd-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    .uk-navbar-nav > li > a.dd-mobile {
+        display: inline;
+    }
+
+    .uk-navbar-nav > li > a.dd-desktop {
+        display: none;
+    }
+}
