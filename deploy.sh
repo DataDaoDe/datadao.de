@@ -14,7 +14,7 @@ docker container stop $CONTAINER_ID
 # remove image
 IMAGE_ID=$(docker images | grep $APP_NAME | gawk '{print $3}')
 echo "[02]: Removing image: ${IMAGE_ID}"
-docker images rm $IMAGE_ID
+docker image rm $IMAGE_ID
 
 # pull latest code
 echo "[03]: Pulling latest code."
