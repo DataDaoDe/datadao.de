@@ -2,7 +2,6 @@
 title = "文章"
 paginate_by = 1
 sort_by = "date"
-template = "article_list.html"
 
 [extra]
 subtitle = "Articles"

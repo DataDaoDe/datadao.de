@@ -9,8 +9,11 @@
   <div class="uk-width-1-1 uk-first-column uk-grid-margin uk-text-center">
     <h2 class="uk-text-center">{{ section.extra["subtitle"] }}</h2>
 
+  {% set articles_2019 = get_section(path="articles/2019/_index.md") %}
+
   <ul class="articles">
-      {% for p in paginator.pages %}
+      <h4>2019</h4>
+      {% for p in articles_2019.pages %}
         <li class="article">
           <div class="article-link">
               <a href="{{ p.permalink }}">{{p.title}}</a>
