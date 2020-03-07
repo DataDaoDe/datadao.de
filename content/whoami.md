@@ -2,14 +2,12 @@
 title = "关于我"
 
 [extra]
-subtitle = "Just a Builder"
+subtitle = "Just another Explorer"
 background_image = "about-bg.jpg"
 +++
 
-My name is John and I'm an engineer who builds AI and ML systems. Academically, I enjoy exploring pure and applied mathematics, but I'm also drawn to the physical sciences such as neuroscience, systems science and physics.
+My name is John and I'm a software engineer and data analyst. Academically and in my free time, I study the place where computer science intersects with medicine.
 
-I have a life-long diversion with the arts, especially literature, design and music. And I am particularly interested in understanding and quantifying the nature of human perception and expression of the various art forms.
+My research time is focused in associated medical informatics subfields like biomedical image analysis, bioinformatics, computational medicine and biostatistics but I also enjoy finding applications out of more theoretic areas such as mathematical modelling and systems science. 
 
-I enjoy building things in general and taking part in just about any sport or physical activity.
-
-I love detailed discussions and if you'd like to talk about some of my work or the above topics just drop me an e-mail.
+I love detailed discussions, getting others exited about medical informatics, helping people improve their skills and watching them make advancements in our current medical knowledge and systems, and overall just helping to improve our current medical knowledge through my own abilities in computer science. If you'd like to talk to me about any of the above topics just drop me an e-mail or hit me up on social media.
