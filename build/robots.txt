@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://datadao.de/sitemap.xml

@@ -1,0 +1,26 @@
+[
+  {
+    "title" : "Automatic Short Answer Grading in an Online Quiz System",
+    "description" : "This thesis researches Automatic Short Answer Grading (ASAG) with the goal of building an automatic grading module for short-text student responses to quiz questions for an online Learning Management System (LMS) called Stembord. The analyses and research inform the design and implementation of the module which uses supervised training and a multi-layer perceptron model to grade short-answers. To complete the research and development process, this module is then integrated as an external API service and called by the Stembord application to perform ASAG.",
+    "published" : true,
+    "date" : "2019/03",
+    "files" : [
+      {
+        "url" : "https://github.com/DataDaoDeResearch/automatic-short-answer-grading",
+        "title" : "Automatic Short Answer Grading Master's Thesis"
+      }
+    ]
+  },
+  { 
+    "title" : "Deep Learning for Computer Assisted Differential Laryngoscopic Tissue Analysis",
+    "description" : "This paper studies tissue classification for laryngoscopic narrow-band images using deep learning techniques, specifically, convolutional neural networks (CNN). Solving the problem of tissue differentiation in an automated way can improve medical professionals decision-making capabilities by augmenting available diagnostic information in screening and early stage diagnosis of laryngeal cancers and, thereby, improve patient outcomes.",
+    "published" : true,
+    "date" : "2018/05",
+    "files" : [
+      {
+        "url" : "https://github.com/DataDaoDeResearch/deep-learning-for-laryngoscopic-tissue-analysis",
+        "title" : "Deep Learning for Laryngoscopic Tissue Analysis"
+      }
+    ]
+  }
+]
