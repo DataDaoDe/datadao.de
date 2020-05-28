@@ -1,11 +1,13 @@
-{% macro contact_link(icon, link) %}
+{% macro contact_link(icon, link, text) %}
 <li>
-<a class="uk-icon-button uk-margin-small-right uk-icon" href="{{link | safe}}" uk-icon="{{icon}}"></a>
+    <a class="uk-icon-button uk-icon" href="{{link | safe}}" uk-icon="{{icon}}"></a>
+    <span class="uk-text-meta">{{text}}</span>
 </li>
 {% endmacro contact_link %}
 
-{% macro mail_link(icon, mail) %}
+{% macro mail_link(icon, mail, text) %}
 <li>
-<a class="uk-icon-button uk-margin-small-right uk-icon" href="mailto:{{mail | safe}}" uk-icon="{{icon}}"></a>
+    <a class="uk-icon-button uk-icon" href="mailto:{{mail | safe}}" uk-icon="{{icon}}"></a>
+    <span class="uk-text-meta">{{text}}</span>
 </li>
 {% endmacro contact_link %}

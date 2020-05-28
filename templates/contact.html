@@ -7,15 +7,18 @@
   <div class="uk-width-1-1 uk-first-column">
     <img src="/images/{{ page.extra["background_image"] }}"/>
   </div>
-  <div class="uk-width-1-1 uk-text-center uk-first-column uk-grid-margin">
+  <div class="uk-width-1-1 uk-first-column uk-grid-margin">
     <h2>{{ page.extra["subtitle"] }}</h2>
-    
+    <hr/>
+  </div>
+  <div class="uk-width-1-1 uk-grid-margin">
     <ul>
-      {{ utils::contact_link(icon="github", link="https://github.com/DataDaoDe") }}</br>
-      {{ utils::contact_link(icon="twitter", link="https://twitter.com/DataDao_de") }}</br>
-      {{ utils::contact_link(icon="linkedin", link="https://www.linkedin.com/in/john-faucett-51210465/") }}</br>
-      {{ utils::contact_link(icon="xing", link="https://www.xing.com/profile/John_Faucett3/cv") }}</br>
-      {{ utils::mail_link(icon="mail", mail="john.faucett@datadao.de") }}
+      {{ utils::contact_link(icon="github", link="https://github.com/DataDaoDe", text="The place where my code lives.") }}</br>
+      {{ utils::contact_link(icon="twitter", link="https://twitter.com/DataDao_de", text="An easy way to quickly get in touch with me.") }}</br>
+      {{ utils::contact_link(icon="linkedin", link="https://www.linkedin.com/in/john-faucett-51210465/", text="My experience and work history yada yada.") }}</br>
+      {{ utils::contact_link(icon="instagram", link="https://www.instagram.com/datadaode/", text="Where I link up art and mathematics.")}}</br>
+      {{ utils::contact_link(icon="reddit", link="https://www.reddit.com/user/DataDaoDe/", text="All my random comments - yikes!")}}
+
     </ul>
   </div>
 {% endblock content %}

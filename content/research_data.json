@@ -6,7 +6,7 @@
     "date" : "2019/03",
     "files" : [
       {
-        "url" : "/downloads/automatic-short-answer-grading-in-an-online-quiz-system.pdf",
+        "url" : "https://github.com/DataDaoDeResearch/automatic-short-answer-grading",
         "title" : "Automatic Short Answer Grading Master's Thesis"
       }
     ]
@@ -18,7 +18,7 @@
     "date" : "2018/05",
     "files" : [
       {
-        "url" : "/downloads/deep_learning_for_larynx.pdf",
+        "url" : "https://github.com/DataDaoDeResearch/deep-learning-for-laryngoscopic-tissue-analysis",
         "title" : "Deep Learning for Laryngoscopic Tissue Analysis"
       }
     ]
