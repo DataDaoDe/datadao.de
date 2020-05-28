@@ -5,7 +5,7 @@ date = 2019-08-05
 template = "article.html"
 +++
 
-Often during meetings and discussions in software development and engineering arguments and reasons are put forward for preferring one method over another. 
+Often during meetings and discussions in software development and engineering arguments and reasons are put forward for preferring one method over another.
 
 Someone may suggest taking one approach and another engineer may ardently prefer a different solution. How can we evaluate each person's reasoning and arguments? It sounds like it might be simple - just evaluate what the person said, break it down into its constituent parts and analyze it. Unfortunately, it is not that simple. We often react to the manner in which things are said, whether loud, angrily, or softly and we bring our own beliefs and current state of mind to the situation - perhaps we didn't sleep well the night before and are just annoyed by the way the person is slowly communicating an idea.
 

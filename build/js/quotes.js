@@ -9,7 +9,8 @@ $(document).ready(function() {
     "\"Mastering others is strength, mastering yourself is true power.\" - Lao Tzu",
     "\"Great acts are made up of small deeds.\" - Lao Tzu",
     "\"He who is contented is rich.\" - Lao Tzu",
-    "\"The only true wisdom is knowing you know nothing.\" - Socrates"
+    "\"The only true wisdom is knowing you know nothing.\" - Socrates",
+    "\"If you want to be given everything, give up everything.\" - Lao Tzu",
   ]  
 
   function randomQuote() {
