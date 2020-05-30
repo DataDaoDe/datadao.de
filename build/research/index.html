@@ -21,37 +21,77 @@
     <script src="/js/highlight.js" type="text/javascript"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-    <script src="/js/quotes.js" type="text/javascript"></script>
+    <script src="/js/site.js" type="text/javascript"></script>
   </head>
   <body>
 
     <div class="uk-container uk-container-xsmall">
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="">
-  <div class="uk-navbar-left">
-    <a class="uk-navbar-item uk-logo" href="/">道</a>
-    <ul class="uk-navbar-nav">
+
+  <div class="uk-navbar-left dd-mobile">
+    
+    <a id="mobile-navbar-toggle" class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+
+    <ul class="uk-navbar-nav dd-mobile-navbar" id="mobile-navbarmenu">
 
       <li>
-        <a class="dd-desktop" href="/articles" title="articles">articles</a>
+        <a href="/" title="home">道</a>
+      </li>
+
+      <li>
+        <a href="/articles" title="articles">articles</a>
       </li>
       
       <li>
-        <a class="dd-desktop" href="/projects" title="projects">projects</a>
+        <a href="/projects" title="projects">projects</a>
       </li>
       
       <li class="uk-active">
-        <a class="dd-desktop" href="/research" title="research">research</a>
+        <a href="/research" title="research">research</a>
       </li>
       
       <li>
-        <a class="dd-desktop" href="/contact" title="contact">contact</a>
+        <a href="/contact" title="contact">contact</a>
       </li>
 
       <li>
-        <a class="dd-desktop" href="/whoami" title="who am i?">who am i?</a>
+        <a href="/whoami" title="who am i?">who am i?</a>
       </li>
+
     </ul>
+
   </div>
+
+  <div class="uk-navbar-left dd-desktop">
+
+    <a class="uk-navbar-item uk-logo" href="/">道</a>
+    
+    <ul class="uk-navbar-nav">
+
+      <li>
+        <a href="/articles" title="articles">articles</a>
+      </li>
+      
+      <li>
+        <a href="/projects" title="projects">projects</a>
+      </li>
+      
+      <li class="uk-active">
+        <a href="/research" title="research">research</a>
+      </li>
+      
+      <li>
+        <a href="/contact" title="contact">contact</a>
+      </li>
+
+      <li>
+        <a href="/whoami" title="who am i?">who am i?</a>
+      </li>
+
+    </ul>
+
+  </div>
+
 </nav>
 </div>
 
@@ -111,8 +151,16 @@
 </div>
 
     </main>
-    <div class="uk-width-1-1 uk-text-center footer">
-      <p class="quote"></p>
+    <div class="uk-container">
+      <div class="uk-width-1-1 uk-text-center footer">
+        <div class="trail">
+          <p class="trail-step trail-step1">◰</p>
+          <p class="trail-step trail-step2">◱</p>
+          <p class="trail-step trail-step3">◲</p>
+          <p class="trail-step trail-step4">◳</p>
+        </div>
+        <p class="quote"></p>
+      </div>
     </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
