@@ -70,30 +70,48 @@ blockquote:before {
   vertical-align: -0.4em;
 }
 
-.uk-navbar-nav > li > a.dd-mobile {
+/* DESKTOP ONLY STYLES */
+.dd-desktop .uk-logo {
+    padding-left: 0px;
+}
+
+/* MOBILE ONLY STYLES */
+
+.dd-mobile {
+    display: none;
+}
+.dd-mobile a.uk-navbar-toggle {
+    justify-content: left;
+    min-height: 0px;
+    padding: 20px 15px 20px 0px;
+}
+
+.dd-mobile-navbar {
+    display: block;
+    display: none;
+}
+.dd-mobile-navbar li {
     display: none;
 }
 
-.uk-navbar-nav > li > a.dd-desktop {
-    display: flex;
-}
-
 @media (max-width: 640px) {
-    .uk-navbar-nav > li > a.dd-mobile {
-        display: inline;
+    .dd-mobile {
+        display: block;
+        width: 100%;
     }
 
-    .uk-navbar-nav > li > a.dd-desktop {
+    .dd-desktop {
         display: none;
     }
 }
 
 @media only screen and (max-device-width: 640px) {
-    .uk-navbar-nav > li > a.dd-mobile {
-        display: inline;
+    .dd-mobile {
+        display: block;
+        width: 100%;
     }
 
-    .uk-navbar-nav > li > a.dd-desktop {
+    .dd-desktop {
         display: none;
     }
 }

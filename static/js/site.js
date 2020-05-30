@@ -21,4 +21,17 @@ $(document).ready(function() {
   $footer = $('.footer .quote')
   $footer.text(randomQuote());
   $footer.fadeIn(1000);
-})
+
+
+  $navbarToggle = $('#mobile-navbar-toggle');
+
+  $navbarToggle.on('click', function(event) {
+    event.preventDefault();
+    $('#mobile-navbarmenu').toggle(100, function() {
+      $('#mobile-navbarmenu li').each(function(index, item) {
+        $(item).delay(100*index).toggle(300);
+      })
+    });
+  });
+
+});
