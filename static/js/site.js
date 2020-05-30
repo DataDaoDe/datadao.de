@@ -18,9 +18,21 @@ $(document).ready(function() {
     return footerQuotes[idx];
   }
 
-  $footer = $('.footer .quote')
-  $footer.text(randomQuote());
-  $footer.fadeIn(1000);
+  $footerTrail = $('.footer .trail');
+  $footerQuote = $('.footer .quote');
+  $footerQuote.text(randomQuote());
+
+  $footerTrail.fadeIn(100, function(index, item) {
+    
+    $steps = $('.footer .trail .trail-step');
+
+    $('.footer .trail .trail-step').each(function(index, item) {
+      $(item).delay(index*300).fadeIn(500);
+    });
+
+    $footerQuote.delay(($steps.length * 300) + 100).fadeIn(1000);
+  });
+  
 
 
   $navbarToggle = $('#mobile-navbar-toggle');
