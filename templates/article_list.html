@@ -12,7 +12,7 @@
   {% set articles = get_section(path="articles/_index.md") %}
 
   <ul class="articles">
-    {% for a in articles.subsections %}
+    {% for a in articles.subsections | sort | reverse %}
 
       {% set articles_for_year = get_section(path=a) %}
 
