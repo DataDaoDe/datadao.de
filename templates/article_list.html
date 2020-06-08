@@ -9,18 +9,26 @@
   <div class="uk-width-1-1 uk-first-column uk-grid-margin">
     <h2>{{ section.extra["subtitle"] }}</h2>
     <hr/>
-  {% set articles_2019 = get_section(path="articles/2019/_index.md") %}
+  {% set articles = get_section(path="articles/_index.md") %}
 
   <ul class="articles">
-      <h4>2019</h4>
-      {% for p in articles_2019.pages %}
+    {% for a in articles.subsections %}
+
+      {% set articles_for_year = get_section(path=a) %}
+
+      <h4>{{ articles_for_year.extra["year"] }} </h4>
+      {% for p in articles_for_year.pages %}
         <li class="article">
           <div class="article-link">
               <a href="{{ p.permalink }}">{{p.title}}</a>
           </div>
         </li>
       {% endfor %}
+
+    {% endfor %}
   </ul>
+
+
   <nav class="pagination">
       {% if paginator.previous %}
           <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>

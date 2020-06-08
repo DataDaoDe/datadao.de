@@ -6,5 +6,5 @@ sort_by = "date"
 [extra]
 subtitle = "Articles"
 background_image = "articles-bg.jpg"
-year = 2019
+year = 2020
 +++
