@@ -1,0 +1,23 @@
+name: End-to-end tests
+
+on: [push]
+jobs:
+  
+  cypress-run:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install zola
+        run: |
+          snap install --edge zola
+      
+      - name: Serve zola
+        needs: Install zola
+        run: |
+          zola serve 
+      
+      - name: Cypress run
+        needs: Serve zola
+        uses: cypress-io/github-action@v1
