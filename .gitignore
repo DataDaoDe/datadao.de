@@ -1,1 +1,13 @@
 public/
+
+# python relics
+__pycache__/
+env/
+tests/fixtures/chromedriver.exe
+
+# webbrowser relics
+debug.log
+geckodriver.log
+
+# testing relics
+node_modules/
