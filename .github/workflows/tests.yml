@@ -14,10 +14,8 @@ jobs:
           snap install --edge zola
       
       - name: Serve zola
-        needs: Install zola
         run: |
           zola serve 
       
       - name: Cypress run
-        needs: Serve zola
         uses: cypress-io/github-action@v1
