@@ -11,3 +11,5 @@ geckodriver.log
 
 # testing relics
 node_modules/
+cypress/screenshots
+cypress/videos

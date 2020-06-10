@@ -4,7 +4,9 @@
   "description": "1. Install Zola [getzola.org](https://www.getzola.org/)\r 2. Add / Create Files to build call `zola build`.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "python -m http.server --directory build/ 1111",
+    "cy:run": "cypress run",
+    "test": "start-server-and-test start http://127.0.0.1:1111 cy:run"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/DataDaoDe/datadao.de#readme",
   "devDependencies": {
-    "cypress": "^4.8.0"
+    "cypress": "^4.8.0",
+    "start-server-and-test": "^1.11.0"
   }
 }

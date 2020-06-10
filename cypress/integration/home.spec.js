@@ -4,7 +4,8 @@ describe('HomePage', function() {
     });
 
     it('has an image of my workdesk', () => {
-        let home_image = cy.get('#home-image');
+        cy.wait(1000);
+        let home_image = cy.get('#workdesk-image');
         home_image.should('have.attr', 'title', 'picture of workdesk');
     });
 
