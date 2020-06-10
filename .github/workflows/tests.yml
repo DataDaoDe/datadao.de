@@ -9,16 +9,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Install Snapcraft
-        uses: samuelmeuli/action-snapcraft@v1
+      - name: Install Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
 
-      - name: Install zola
+      - name: Start python server
         run: |
-          snap install --edge zola
+          python -m http.server --directory build/ 1111
       
-      - name: Serve zola
-        run: |
-          zola serve 
-      
-      - name: Cypress run
+      - name: Run test suite
         uses: cypress-io/github-action@v1
