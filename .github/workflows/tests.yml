@@ -9,6 +9,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: Install Snapcraft
+        uses: samuelmeuli/action-snapcraft@v1
+
       - name: Install zola
         run: |
           snap install --edge zola
