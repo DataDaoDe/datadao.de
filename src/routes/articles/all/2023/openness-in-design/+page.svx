@@ -1,0 +1,45 @@
+<script lang="ts">
+
+let commands = 5;
+
+</script>
+
+<svelte:head>
+  <title>Openness in Design</title>
+</svelte:head>
+
+## Openness in Design
+
+Interactions between users and software can be thought of as commands, requests and responses. We can think of these as _choices_. Each timed interaction between a user and a piece of software is then a series of specific choices, picked from the set of possible commands.
+
+At any step $s$ along the way in this sequence, there is some number of potential commands or actions that the user interacting with the software could, at that time, carry out. He or she then picks from this set his desired command and moves to the next step in this interactive sequence. 
+
+In this framework of thinking about users and their interaction with software, **openness** can then be defined as the average size of that set of potential commands across the entire sequence. I'll call this average number of potential commands or choices $\bar{x}$.
+
+Let's examine this notion.
+
+### Example 1: Low Openness - App Installer
+
+An app installer has virtually no openness. Let's say it has four total commands:
+
+$$\{\text{prev}, \text{next}, \text{cancel}, \text{ok} \}$$
+
+And there are three steps. On the first step, all we can do is enter either $\{\text{next}, \text{cancel} \}$. At step two we can enter three comands $\{\text{prev}, \text{next}, \text{cancel}\}$. And on the third and final step we can enter one of $\{\text{cancel}, \text{ok} \}$. So our average number of choices across all steps is $2.\bar{3}$.
+
+This is nice because as the **openness**, that is the average number of possible choices $\bar{x} \to 0$, the number of choices available to the user to decreases as well. Conversely, as $\bar{x} \to \infty$, the number of potential choices and actions between the user and the software increases. This is the idea of **openness** I am going for.
+
+### Example 2: High Openness - Photoshop
+
+At the other end, we have software applications like Photoshop. The list of commands, though finite, is too long to list out in this little article. But lets imagine a simplified scenario. At stage one for instance, let's say the user ops to enter the command **New Project**. At this step, the potential commands are refined and might be as few as $5$ or $10$. There are options like choosing a horizontal or vertical canvas and an aspect ratio. However, once the canvas has been created, a myriad of potential actions pop up again, on the order of thousands if not tens of thousands - and this is all just two steps into the use of the application. 
+
+The average number of possible commands will be much greater for an application like photoshop than for our app installer.
+
+### Openness as potential State Space
+
+The potential choices at each step in the user/software dialogue represent the next state space of where the interaction between the user and software can go. If, for instance, in Photoshop, the user has currently selected the pen tool and drawn a point. His current state is perhaps something like $(\text{Pen\_Tool}, (X, Y) )$, where X and Y represent the X and Y coordinates of his currently drawn point. The state space for his next action is constrained by the current state such that a likely choice will be $(\text{Pen\_Tool}, (X', Y') )$, that is, another drawn point.
+
+### Conclusions
+
+I think what is interesting about this particular method for conceptualizing openness in design, is that it let's us think about openness in general terms - the average number of possible commands at any given time - and gives us a simple method for focusing in on the openness levels at a particular state in our ux process. Perhaps, for instance, when beginning usage we want to constrain openness keeping it quite low so users can get started quickly and have few ways to diverge from the experience we want to create for them. In another location in the interactive state space, we might want to have virtually no openness, for instance when an error occurs - allowing the user only the option to send an error report or close the notification window. Perhaps, we want to create high openness i.e. many possible states for prolonged time periods, as in a video chat app, where the user might be able to add emojies, mute, type, draw, etc. all at any point in the dialogue. 
+
+Thinking about state spaces, choices and the average number of choices over a series of steps in the application usage process is, I think, a useful little framework for critiquing and building software applications.
