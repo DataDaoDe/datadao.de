@@ -1,0 +1,30 @@
+name: ci
+on:
+  pull_request: {}
+  push:
+    branches:
+      - main
+jobs:
+  check:
+    strategy:
+      matrix:
+        node: [16, 18]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Download deps
+        uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
+
+      - name: ▶Run check script
+        run: npm run check
+        env:
+          FORCE_COLOR: true

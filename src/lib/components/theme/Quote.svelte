@@ -12,6 +12,6 @@
   let quote = quotes[index];
 </script>
 
-<div class="prose prose-xl prose-slate text-center my-4">
+<div class="Quote prose prose-xl prose-slate text-center my-4">
   <p>{quote}</p>
 </div>
