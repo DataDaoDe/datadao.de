@@ -15,7 +15,7 @@
   <!-- Header -->
 	<Header />
 
-	<main class="mx-2">
+	<main class="mx-2 min-h-screen">
 		<div class="mx-auto max-w-3xl">
 			<slot />
 		</div>

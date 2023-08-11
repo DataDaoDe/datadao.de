@@ -1,10 +1,8 @@
 export type Categories = 'design'
 
-export type Post = {
+export type Article = {
 	title: string
-	slug: string
+	url: string
 	description: string
-	date: string
-	categories: Categories[]
-	published: boolean
+	tags: string[]
 }
