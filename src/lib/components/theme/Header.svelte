@@ -3,7 +3,7 @@
     <div class="Header--logo">
       <a href="/" class="flex items-center text-slate-500 text-2xl">道</a>
     </div>
-    <div class="Header--navMenu">
+    <div class="Header--navMenu text-slate-500">
       <nav class="">
         <ul class="flex flex-row items-center justify-between space-x-8 uppercase text-center">
           <li>

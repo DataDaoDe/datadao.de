@@ -1,0 +1,8 @@
+version: 2
+updates:
+  - package-ecosystem: "pnpm"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "deps"
+      include: "scope"

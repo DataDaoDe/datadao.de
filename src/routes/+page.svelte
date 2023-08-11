@@ -5,7 +5,7 @@
 
 
 <div class="mx-auto max-w-3xl">
-  <img alt="Start sketching" src={startWorking} />
+  <img alt="Start sketching" src={startWorking} data-testid="mainImage" />
 
   <Quote index={0}/>
 </div>

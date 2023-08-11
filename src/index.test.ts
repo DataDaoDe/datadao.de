@@ -1,7 +1,14 @@
-import { describe, it, expect } from 'vitest';
+// NOTE: jest-dom adds handy assertions to Jest and it is recommended, but not required.
+import '@testing-library/jest-dom'
+import '@testing-library/jest-dom/extend-expect'
+import {render, screen} from '@testing-library/svelte'
 
-describe('sum test', () => {
-	it('adds 1 + 2 to equal 3', () => {
-		expect(1 + 2).toBe(3);
-	});
-});
+import Quote from './lib/components/theme/Quote.svelte'
+
+
+
+test('shows quote when it is rendered in the document', () => {
+  render(Quote, { index: 0})
+  const quote = screen.getByText(/The only true wisdom is knowing you know nothing/i)
+  expect(quote).toBeInTheDocument()
+})
