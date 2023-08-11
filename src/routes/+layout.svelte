@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Footer from '$lib/components/theme/Footer.svelte'
 	import Header from '$lib/components/theme/Header.svelte'
+	import Analytics from '$lib/components/Analytics.svelte';
 
 	import {title} from '$lib/config'
 
@@ -22,5 +23,6 @@
 	</main>
 
   <!-- Footer -->
+	<Analytics />
 	<Footer />
 </div>
